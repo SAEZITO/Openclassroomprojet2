@@ -1,0 +1,85 @@
+@font-face
+{
+    font-family: '';
+    src: url('.eot');
+    src: url('.eot?#iefix') format('embedded-opentype'),
+         url('.woff') format('woff'),
+         url('.ttf') format('truetype'),
+         url('') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body
+{
+	font-style: 'raleway', Arial, 'Calibri', sans-serif ;
+}
+
+header
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: baseline;
+}
+header a:hover /*placer un liseret au survol des choix de l'en-tête*/
+{
+    border-bottom: : 2.5px solid #0065FC;
+}
+
+
+nav
+{
+	display: flex;
+    flex: 3;
+    justify-content: flex-end;
+ 	flex-direction: row;
+}
+.Recherche
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.Rechercher
+{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0065FC;
+    height: 30px;
+    color: white;
+    font-family: 'Raleway';
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.marqueur
+{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #F2F2F2;
+    height: 40px;
+    width: 40px;
+    margin-left: 135px;
+}
+section
+{
+	background-color: ;
+}
+a
+{
+	color: black;
+	text-decoration-line: none;
+}
+
+footer
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 105px;
+    margin-right: 90px; 
+    padding: 30px;
+    background-color: #F2F2F2;
+}
