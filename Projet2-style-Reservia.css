@@ -14,64 +14,181 @@
 body
 {
 	font-style: 'raleway', Arial, 'Calibri', sans-serif ;
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    align-content: center;
 }
-
+a
+{
+    color: black;
+    text-decoration-line: none;
+}
 header
 {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: baseline;
+    align-content: flex-end;
 }
-header a:hover /*placer un liseret au survol des choix de l'en-tête*/
+header img 
 {
-    border-bottom: : 2.5px solid #0065FC;
+	width: 150px;
+	height: 50px;
+    padding: 1rem 25rem 0.3rem 1rem;
+}
+header a
+{
+    font-size: 1.5em;
+    padding: 0.2rem; 
+    margin: 0.5rem;
+}
+header a:hover 			/*placer un liseret au survol des choix de l'en-tête*/
+{
+    border-top: 2.5px solid #0065FC;
+    color: #0065FC;
 }
 
 
 nav
 {
-	display: flex;
-    flex: 3;
-    justify-content: flex-end;
- 	flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
 }
-.Recherche
+nav form
 {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    font-weight: bold;
+    background: none;
+    margin-right: 90rem;    
 }
-.Rechercher
+nav form label
 {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #0065FC;
-    height: 30px;
-    color: white;
-    font-family: 'Raleway';
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-}
-.marqueur
-{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: #F2F2F2;
-    height: 40px;
-    width: 40px;
-    margin-left: 135px;
+    background-color: #F2F2F2F2;
+    height: 30px;
+    width: 35px;
+}
+input::placeholder
+{
+    color: black;
+    font-weight: bold;
+    font-size: 0.7rem;
+    opacity: 1;
+}
+
+nav strong 
+{
+     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    border: 2px solid #CCCCCC;
+    border-radius: 30px;
+    font-weight: bold;
+    margin: 0.5rem;
+
+}
+nav i
+{
+    padding: 0.2rem;
+}
+nav strong:hover
+{
+    background-color: #CCCCCC; 
 }
 section
 {
-	background-color: ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-a
+article:first-child
 {
-	color: black;
-	text-decoration-line: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;   
+    border-radius: 20px;
+    margin: 3%;
+    width: 60%;
+    height: 750px;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+article:nth-child(3)
+{
+ display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+aside
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 30%;
+    height: 750px;
+    margin-top: 3%;
+}
+aside figure
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin:30px;
+    width: 80%;
+}
+figure
+{   display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px white solid;
+    box-shadow: 3px 3px 10px #cccccc;
+    width: 210px;
+}
+figure img
+{
+    height:100px; 
+    width:190px;
+}
+figure i
+{
+    color: #0065FC;
+}
+h2 i 
+{
+    margin: 25px;
+}
+li
+{
+    list-style: none;
 }
 
 footer
@@ -82,4 +199,39 @@ footer
     margin-right: 90px; 
     padding: 30px;
     background-color: #F2F2F2;
+}
+
+
+
+.blue
+{
+    color: #0065FC;
+}
+.cyan
+{
+    color: #DEEBFF; 
+}
+.boldblue 
+{
+    color: #0065FC;
+    font-weight: bold;
+    size: 1rem;
+}
+.bgblue
+{
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    font-weight: none;
+}
+.grey
+{
+    color: #F2F2F2F2;
+}
+.greybrdr
+{
+    border: 1px solid #F2F2F2F2;
+    padding-left: 0.7rem; 
 }
