@@ -17,20 +17,22 @@ html
 body
 {
 	font-family: 'Raleway', Arial, Verdana, sans-serif ;
-	display: inline-block;
-    margin: 5px 25px 5px 25px;
 }
 a
 {
     color: black;
     text-decoration-line: none;
 }
+b
+{
+    font-weight: 900;
+}
 header
 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: baseline;
     align-content: center;
 }
 
@@ -38,11 +40,17 @@ header a:hover 			/*placer un liseret au survol des choix de l'en-tête*/
 {
     border-top: 2.5px solid #0065FC;
     color: #0065FC;
+    padding-bottom: 25px;
+}
+.container
+{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 nav a
 {
     font-size: 1.5rem;
-    padding: 2.5rem;
+    padding: 5rem;
 }
 nav
 {
@@ -50,7 +58,7 @@ nav
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: baseline;
     padding: 0.5rem;
 }
 .position
@@ -69,8 +77,9 @@ nav
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: #F2F2F2F2;
-    height: 30px;
-    width: 35px;
+    height: 5rem;
+    width: 5rem;
+    font-size: 1.9rem;
 }
 input::placeholder
 {
@@ -96,68 +105,83 @@ button
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    align-content: flex-start;
     margin-top: 1rem;
+    width: 100%;
+    font-size: 1.9rem;
 }
 .filterbut
 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    border: 2px solid #CCCCCC;
+    border: 1px solid #CCCCCC;
     border-radius: 30px;
     font-weight: bold;
-    font-size: 1.2rem;
-    margin: 0.5rem;
-    padding-left: 0rem;
-    padding-right: 0.5rem;
+    margin: 1rem;
+    padding: 1rem;
     background: none;
-    width: auto;
-    height: auto;
+    height: 40px;
+    font-size: 1.9rem;
 }
 .filterbut:hover
 {
-    background-color: #CCCCCC; 
+    background-color: #CCCCCC;
+    transform: scale(1.05);
+    transition-duration: 1s; 
 }
 .fa-stack
 {
-    margin: 0rem;
-    padding: 0rem;
+    right: 2rem;
 }
-section
+#hebergement
 {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: stretch;
-    margin-top: 2rem;
+    justify-content: space-between;
     padding: 2rem;
     background-color: #F2F2F2;
+    border-radius: 20px;
     width: 60%;
 
+}
+#tendances
+{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 30%;
+}
+#tendances a:hover , #hebergement a:hover
+{
+    transform: scale(1.05);
+    transition-duration: 1s;
 }
 article
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    min-height: 40rem;
 }
 .card
 {   
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    align-items: center;
     border-radius: 20px;
-    margin: 3rem 3rem 3rem 0rem;
-    width: 35rem;
-    height: 35rem;
-    text-align: center;
-    padding: 1rem;
+    width: 25rem;
+    padding: 0.25rem;
     background-color: white;
-    border-radius: 20px;
-    border: 4px white solid;
+    border-radius: 2rem;
     box-shadow: 3px 3px 10px #CCCCCC; 
 }
 .cardimage
@@ -165,9 +189,8 @@ article
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: stretch;
-    width: 35rem;
-    height: 25rem;
+    justify-content: flex-start;
+    width: 100%;
     margin: 0px;
     padding: 0px;
 }
@@ -176,20 +199,68 @@ article
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.cardfooter
+{
+    margin: 0.3rem;
+}
+.photoHeber
+{
+   display: block;
+   width: 100%;
+   height: 10rem;
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+   object-fit: cover;
+}
+.imgtendance
+{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 130px;
+    height: 135px;
+    object-fit: cover;
+
+}
+
+.card2
+{   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 10rem;
+    text-align: left;
+    margin-top: 1rem;
+    padding: 0.25rem;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 10px #CCCCCC; 
+}
+.cardimage2
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.cardinfo2
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-}
-.photoHeberg
-{
-    max-width: 350px;
-    max-height: 250px;
-}
-
-
-
-h2 i 
-{
-    margin: 25px;
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 0.7rem;
 }
 li
 {
@@ -205,8 +276,35 @@ footer
     padding: 30px;
     background-color: #F2F2F2;
 }
-
-
+.circle
+{
+    min-width: 2rem;
+    min-height: 2rem;
+    height: 2rem;
+    width: 2rem;
+    border: solid 1px #CCCCCC;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    position: relative;
+    top: 7px; 
+}
+.inforesult
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+.centrepage
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5rem;
+}
 
 .cyan
 {
@@ -225,10 +323,11 @@ footer
     border-bottom-right-radius: 10px;
     border: none;
     font-weight: normal;
+    padding: 1rem;
 }
 .grey
 {
-    color: #F2F2F2F2;
+    color: #CCCCCC;
 }
 .greybrdr
 {
@@ -239,4 +338,10 @@ footer
 {
     width: 15rem;
     height: 5rem;
+}
+h2
+{
+    margin: 5px 10px 5px 0px;
+    display: flex;
+    justify-content: space-between;
 }
