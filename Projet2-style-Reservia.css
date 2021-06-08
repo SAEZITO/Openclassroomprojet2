@@ -1,11 +1,11 @@
 @font-face
 {
     font-family: 'Raleway';
-    src: url('\Police\static\Raleway-VariableFont_wght.eot');
-    src: url('\Police\static\Raleway-Thin.eot?#iefix') format('embedded-opentype'),
-         url('\Police\static\Raleway-Thin.woff') format('woff'),
-         url('\Police\static\Raleway-Thin.ttf') format('truetype'),
-         url('\Police\static\Raleway-Thin') format('svg');
+    src: url('./Police/Raleway-VariableFont_wght.eot');
+    src: url('./Police/Raleway-VariableFont_wght.eot?#iefix') format('embedded-opentype'),
+         url('./Police/Raleway-VariableFont_wght.woff') format('woff'),
+         url('./Police/Raleway-VariableFont_wght.ttf') format('truetype'),
+         url('./Police/Raleway-VariableFont_wght') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,6 +17,7 @@ html
 body
 {
 	font-family: "Raleway", Arial, Verdana, serif;
+    margin: 0px;
 }
 .container
 {
@@ -376,20 +377,14 @@ article
 footer
 {
     display: flex;
+    justify-content: space-between;
     background-color: #F2F2F2;
-    width: 110%;
+    width: 100%;
     margin: 3rem 0rem 3rem 0rem;
-    padding: 5rem 5rem 5rem 5rem;
-    position: relative;
-    right: 5rem;
+    padding: 5rem 4rem 5rem 4rem;
+    box-sizing: border-box;
 }
-footer p
-{
-    margin-bottom: 2rem;  
-    list-style: none;
-    font-size: 1.8rem;
-    font-weight: 800;
-}
+
 li
 {
     list-style: none;
