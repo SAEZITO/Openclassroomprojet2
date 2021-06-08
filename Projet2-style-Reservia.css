@@ -152,8 +152,6 @@ button
 }
 .circle
 {
-    min-width: 2rem;
-    min-height: 2rem;
     height: 2rem;
     width: 2rem;
     border: solid 1px #CCCCCC;
@@ -219,8 +217,8 @@ article
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 .cardinfo , .cardinfo2
 {
@@ -238,7 +236,7 @@ article
 }
 .cardinfo2 i 
 {
-    padding: 2rem 0rem 0rem 0rem;
+    padding-top: 2rem;
     font-size: 1.2rem;
 }
 .photoHeber
@@ -273,7 +271,7 @@ article
     width: 100%;
     height: 16rem;
     text-align: left;
-    margin: 0rem 0rem 3rem 0rem;
+    margin: 0 0 3rem 0;
     padding: 0.5rem;
     background-color: white;
     border-radius: 15px;
@@ -285,8 +283,8 @@ article
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     
 }
 .imgtendance
@@ -303,8 +301,8 @@ article
     flex-direction: column;
     height: 60rem;
     width: 100%;
-    padding: 0rem;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 .activites
 {
@@ -317,7 +315,7 @@ article
 {
     display: flex;
     flex-direction: column;
-    padding: 0rem;
+    padding: 0;
     background-color: white;
     border-radius: 15px;
     box-shadow: 3px 3px 10px #CCCCCC; 
@@ -326,8 +324,8 @@ article
 .cardimage3
 {
     display: flex;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -370,7 +368,7 @@ article
 {
     height: 18rem;
     width: 33rem;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0 0;
     object-fit: cover;
     box-sizing: border-box;
 }
@@ -380,7 +378,7 @@ footer
     justify-content: space-between;
     background-color: #F2F2F2;
     width: 100%;
-    margin: 3rem 0rem 3rem 0rem;
+    margin: 3rem 0 3rem 0;
     padding: 5rem 4rem 5rem 4rem;
     box-sizing: border-box;
 }
@@ -389,14 +387,14 @@ li
 {
     list-style: none;
     margin-right: 30rem;
-    padding: 0px;
+    padding: 0;
 }  
 ul
 {
     font-weight: 500;
     font-size: 1.5rem;
     padding: 0rem;
-    margin: 1rem 0rem 0rem 0rem;
+    margin-top: 1rem;
 }
 
 .cyan
@@ -430,11 +428,11 @@ ul
 }
 h1
 {
-    margin: 0px;
+    margin: 0;
 }
 h2
 {
-    margin: 1rem 0rem 1rem 0rem;
+    margin: 1rem 0 1rem 0;
     display: flex;
     justify-content: space-between;
     font-size: 2.1rem;
