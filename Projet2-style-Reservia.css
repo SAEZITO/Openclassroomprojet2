@@ -39,32 +39,27 @@ p
     font-size: 1.4rem;
     margin-top: 0.5rem;
 }
-header
+.top
 {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
     margin-bottom: 2em;
 }
 
-header a:hover 			/*placer un liseret au survol des choix de l'en-tête*/
+header nav a:hover 			/*placer un liseret au survol des choix de l'en-tête*/
 {
     border-top: 2.5px solid #0065FC;
     color: #0065FC;
-    padding-bottom: 25px;
 }
 nav a
 {
     font-size: 1.5rem;
-    padding: 3rem 2rem 4rem 2rem;
+    padding: 2.5rem 2rem 4rem 2rem;
 }
 nav
 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
     align-items: baseline;
     padding: 0.5rem;
 }
@@ -112,7 +107,6 @@ button
     flex-direction: row;
     align-items: center;
     margin-top: 2rem;
-    width: 100%;
     font-size: 1.9rem;
 }
 .filterbut
@@ -126,7 +120,7 @@ button
     border-radius: 30px;
     font-weight: bold;
     margin: 1rem;
-    padding: 0rem 1.5rem 0rem 0rem;
+    padding: 1.5rem 1.5rem 1.5rem 0;
     background: none;
     height: 40px;
     font-size: 1.9rem;
@@ -135,13 +129,13 @@ button
 {
     background-color: #CCCCCC;
     transform: scale(1.05);
-    transition-duration: 1s; 
+    transition-duration: 0.5s; 
     cursor: pointer;
 }
 .fa-stack
 {
-    font-size: 2.1rem;
-    right: 0.7rem;
+    font-size: 2.5rem;
+    right: 1rem;
 }
 .inforesult
 {
@@ -202,7 +196,7 @@ article
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    width: 28rem;
+    width: 27rem;
     padding: 0.5rem;
     background-color: white;
     border-radius: 2rem;
@@ -224,9 +218,10 @@ article
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     font-size: 1.2rem;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0 1rem 1rem;
     box-sizing: border-box;
 }
 .cardfooter
@@ -243,7 +238,7 @@ article
 {
    display: block;
    width: 100%;
-   height: 15rem;
+   height: 14rem;
    border-top-right-radius: 20px;
    border-top-left-radius: 20px;
    object-fit: cover;
@@ -269,7 +264,7 @@ article
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 16rem;
+    height: 15rem;
     text-align: left;
     margin: 0 0 3rem 0;
     padding: 0.5rem;
@@ -291,7 +286,7 @@ article
 {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    width: 12rem;
+    width: 13rem;
     height: 100%;
     object-fit: cover;
 }
@@ -358,7 +353,7 @@ article
 }
 .imgact4
 {
-    height: 18rem;
+    height: 20rem;
     width: 33rem;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
@@ -366,7 +361,7 @@ article
 }
 .imgact5
 {
-    height: 18rem;
+    height: 16rem;
     width: 33rem;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
@@ -457,5 +452,55 @@ h5
     cursor: pointer;
     margin: 0;
     font-weight: 800;
-    margin-top: 2rem;
 }
+
+/** Mobile **/
+@media (max-width: 480px) {
+    
+    header
+    {
+        justify-content: flex-start;
+        align-items: flex-start;
+    } 
+    nav
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+     .top 
+     {
+        flex-wrap: wrap;
+     }   
+
+    .sinscrire 
+    { 
+        order: -1; 
+        flex: 1 0 100%;
+        padding: 5rem;
+    }
+   
+    .filtre
+    {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .centrepage
+    {
+        flex-direction: column-reverse;
+    }
+    #tendances
+    {
+        width: 100%;
+    }
+    #hebergement
+    {
+        background: none;
+    }
+
+}
+/** Tablet **/
+@media (max-width: 768px) {
+ 
+}
+ 
