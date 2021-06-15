@@ -57,11 +57,9 @@ nav a
     font-size: 1.5rem;
     padding: 2.5rem 2rem 4rem 2rem;
 }
-nav
+.navlogo
 {
-    display: flex;
-    align-items: baseline;
-    padding: 0.5rem;
+    margin-right: 95rem;
 }
 .logo 
 {
@@ -86,7 +84,7 @@ nav
     border-bottom-left-radius: 15px;
     background-color: #F2F2F2F2;
     height: 100%;
-    width: 4rem;
+    width: 5rem;
     font-size: 1.5rem;
 }
 input::placeholder
@@ -120,9 +118,9 @@ button
     border-radius: 30px;
     font-weight: bold;
     margin: 1rem;
-    padding: 1.5rem 1.5rem 1.5rem 0;
+    padding: 2rem 3rem 2rem 0;
     background: none;
-    height: 40px;
+    height: 50px;
     font-size: 1.9rem;
 }
 .filterbut:hover
@@ -391,7 +389,10 @@ ul
     padding: 0rem;
     margin-top: 1rem;
 }
-
+.iconsearch
+{
+    display: none;
+}
 .cyan
 {
     color: #DEEBFF; 
@@ -408,9 +409,9 @@ ul
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border: none;
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 2rem;
 }
 .grey
 {
@@ -419,7 +420,7 @@ ul
 .greybrdr
 {
     border: 1px solid #F2F2F2F2;
-    padding-left: 1rem; 
+    padding: 0 2rem 0 1rem; 
 }
 h1
 {
@@ -456,48 +457,132 @@ h5
 
 /** Mobile **/
 @media (max-width: 480px) {
-    
-    header
+    .container
     {
-        justify-content: flex-start;
-        align-items: flex-start;
-    } 
-    nav
-    {
-        display: flex;
-        flex-wrap: wrap;
+
+
     }
+    header nav a:hover
+    {
+    color: #0065FC;
+    border-top: 0;
+    }
+
+        h1, h2
+{
+    font-size: 20px;
+}
+h3, h4, h5
+{
+    font-size: 18px;
+}
+p
+{
+    font-size: 16px;
+}
      .top 
      {
         flex-wrap: wrap;
+        min-height: 15rem;
+        justify-content: center;
+        align-content: center;
      }   
+     .top :nth-child(3) , .top :nth-child(2)
+     {
+        order: 3;
+        padding: 1.5rem;
+        border-bottom: 3px solid #F2F2F2; 
+        width: 40%;
 
-    .sinscrire 
-    { 
-        order: -1; 
-        flex: 1 0 100%;
-        padding: 5rem;
+     }
+     .navheb:hover , .navact:hover
+    {
+    border-bottom: 3px solid #0065FC;
+    color: #0065FC;
     }
-   
+     .navlogo
+     {
+        margin: 0;
+     }
+
+    .navheb 
+    {       }
+    .navinsc
+    {    width: 50%; 
+        display: flex;
+        justify-content: center;
+    }
+    .textsearch
+    {
+        display: none;
+    }
+    .iconsearch
+    {
+        display: flex;
+        color: white;
+        font-size: 20px;
+
+    }
+    .searchbar
+    {
+        font-size: 20px;
+    }
+    }
     .filtre
     {
+        display: inline-block;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-start;
     }
-    .centrepage
+    .filterbut
+    {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        height: 3rem;
+    }
+    .fa-stack
+    {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+        
+        .centrepage
     {
         flex-direction: column-reverse;
     }
+    .card2:hover , .card:hover , .card3:hover
+    {
+        display: none;
+    }
     #tendances
     {
-        width: 100%;
+        width: 30rem;
+        padding: 0.5rem;
     }
     #hebergement
     {
         background: none;
+        padding: 0;
     }
-
+    .photoHeber, .imgact1, .imgact2,.imgact3, .imgact4, .imgact5
+    {
+        height: 10rem;
+        width: 30rem;
+    }
+    .card
+    {
+        width: 30rem;
+    }
+    .card3
+    {
+        margin: 0 0 2rem 2rem;
+    }
+    footer
+    {
+        flex-direction: column;
+        margin-top: 65rem;
+    }
 }
 /** Tablet **/
 @media (max-width: 768px) {
