@@ -3,7 +3,6 @@
     font-family: 'Raleway';
     src: url('./Police/Raleway-VariableFont_wght.eot');
     src: url('./Police/Raleway-VariableFont_wght.eot?#iefix') format('embedded-opentype'),
-         url('./Police/Raleway-VariableFont_wght.woff') format('woff'),
          url('./Police/Raleway-VariableFont_wght.ttf') format('truetype'),
          url('./Police/Raleway-VariableFont_wght') format('svg');
     font-weight: normal;
@@ -16,7 +15,7 @@ html
 }
 body
 {
-	font-family: "Raleway", Arial, Verdana, serif;
+	font-family: 'Raleway', Arial, Verdana, sans-serif;
     margin: 0px;
 }
 .container
@@ -37,9 +36,8 @@ b
 p
 {
     font-size: 1.4rem;
-    margin-top: 0.5rem;
 }
-.top
+nav
 {
 	display: flex;
 	justify-content: space-between;
@@ -163,15 +161,15 @@ button
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    margin: 2rem 0rem 2rem 0rem;
+    margin: 2rem 0rem;
 }
-#hebergement
+.hebergement
 {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    padding: 3rem 5rem 3rem 5rem;
+    padding: 1rem 3rem;
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 65%;
@@ -200,7 +198,7 @@ article
     border-radius: 2rem;
     box-shadow: 3px 3px 10px #CCCCCC; 
     cursor: pointer;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 .cardimage
 {
@@ -212,7 +210,7 @@ article
     margin: 0;
     padding: 0;
 }
-.cardinfo , .cardinfo2
+.cardinfo , .cardinfo2, .cardinfo3
 {
     display: flex;
     flex-direction: column;
@@ -224,8 +222,7 @@ article
 }
 .cardfooter
 {
-    font-size: 1.4rem;
-    margin: 0.3rem;
+    margin: 0.1rem;
 }
 .cardinfo2 i 
 {
@@ -241,15 +238,15 @@ article
    border-top-left-radius: 20px;
    object-fit: cover;
 }
-#tendances
+.tendances
 {
   display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 3rem;
+    padding: 1rem 3rem;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 20%;
+    width: 25%;
     margin-bottom: 2rem;
 }
 .card2:hover , .card:hover , .card3:hover
@@ -264,7 +261,7 @@ article
     width: 100%;
     height: 15rem;
     text-align: left;
-    margin: 0 0 3rem 0;
+    margin: 0 0 2rem 0;
     padding: 0.5rem;
     background-color: white;
     border-radius: 15px;
@@ -278,31 +275,32 @@ article
     justify-content: center;
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 20rem;
     
 }
 .imgtendance
 {
+    display: flex;
+    height: 100%;
+    width: 100%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    width: 13rem;
-    height: 100%;
     object-fit: cover;
 }
-#activités
+.activités
 {
     display: flex;
     flex-direction: column;
-    height: 60rem;
-    width: 100%;
     padding: 0;
     margin: 0;
 }
-.activites
+.activit
 {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    width: 33rem;
+    width: 25%;
 }
 .card3
 {
@@ -327,43 +325,35 @@ article
 {   
     height: 45rem;
     width: 33rem;
+}
+.imgact
+{
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
     box-sizing: border-box;
+    height: 100%;
 }
 
 .imgact2
 {
     height: 25rem;
     width: 33rem;
-    border-radius: 15px 15px 0px 0px;
-    object-fit: cover;
-    box-sizing: border-box;
 }
 
 .imgact3
 {
     height: 11rem;
     width: 33rem;
-    border-radius: 15px 15px 0px 0px;
-    object-fit: cover;
-    box-sizing: border-box;
 }
 .imgact4
 {
     height: 20rem;
     width: 33rem;
-    border-radius: 15px 15px 0px 0px;
-    object-fit: cover;
-    box-sizing: border-box;
 }
 .imgact5
 {
     height: 16rem;
     width: 33rem;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-    box-sizing: border-box;
 }
 footer
 {
@@ -371,8 +361,8 @@ footer
     justify-content: space-between;
     background-color: #F2F2F2;
     width: 100%;
-    margin: 3rem 0 3rem 0;
-    padding: 5rem 4rem 5rem 4rem;
+    margin: 3rem 0 0 0;
+    padding: 5rem 4rem;
     box-sizing: border-box;
 }
 
@@ -420,7 +410,7 @@ ul
 .greybrdr
 {
     border: 1px solid #F2F2F2F2;
-    padding: 0 2rem 0 1rem; 
+    padding: 0 7rem 0 1rem; 
 }
 h1
 {
@@ -428,15 +418,15 @@ h1
 }
 h2
 {
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0;
     display: flex;
     justify-content: space-between;
     font-size: 2.1rem;
-    font-weight: 800;
+    font-weight: 1000;
 }
 h3
 {
-    font-weight: bold;
+    font-weight: 1000;
     font-size: 1.7rem;
     margin-right: 2rem;
 }
@@ -456,10 +446,12 @@ h5
 }
 
 /** Mobile **/
-@media (max-width: 480px) {
+@media (max-width: 480px) 
+{
     .container
     {
-
+        margin: 0;
+        max-width: inherit;
 
     }
     header nav a:hover
@@ -468,40 +460,32 @@ h5
     border-top: 0;
     }
 
-        h1, h2
-{
-    font-size: 20px;
-}
-h3, h4, h5
-{
-    font-size: 18px;
-}
-p
-{
-    font-size: 16px;
-}
-     .top 
+    nav 
      {
         flex-wrap: wrap;
         min-height: 15rem;
         justify-content: center;
         align-content: center;
      }   
-     .top :nth-child(3) , .top :nth-child(2)
+     nav :nth-child(3) , nav :nth-child(2)
      {
         order: 3;
-        padding: 1.5rem;
+        padding: 1.8rem;
         border-bottom: 3px solid #F2F2F2; 
         width: 40%;
-
-     }
+    }
+    
      .navheb:hover , .navact:hover
     {
     border-bottom: 3px solid #0065FC;
     color: #0065FC;
     }
+    
      .navlogo
      {
+        width: 40%;
+        display: flex;
+        justify-content: flex-start;
         margin: 0;
      }
 
@@ -510,7 +494,17 @@ p
     .navinsc
     {    width: 50%; 
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
+        align-self: flex-end;
+    }
+    .logo
+    {
+        padding: 0;
+        margin: 0;
+    }
+    .search
+    {
+        padding: 0 2rem;
     }
     .textsearch
     {
@@ -520,72 +514,222 @@ p
     {
         display: flex;
         color: white;
-        font-size: 20px;
-
+        font-size: 1.5rem;
+    }
+    .bgblue
+    {
+        padding: 1.5rem;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        position: relative;
+        right: 10px;
     }
     .searchbar
     {
         font-size: 20px;
     }
-    }
     .filtre
     {
-        display: inline-block;
-        flex-direction: column;
         flex-wrap: wrap;
-        align-items: flex-start;
+    }
+    .titlefilter
+    {
+        width: 100%;
+    }
+    .roman
+    {
+        margin-right: 15rem;
     }
     .filterbut
     {
-        padding: 0.5rem;
-        font-size: 1.2rem;
-        height: 3rem;
+        padding: 0 1rem 0 0;
+        height: 5rem;
+        font-size: 1.4rem;
     }
     .fa-stack
     {
-        font-size: 1.4rem;
         margin: 0;
     }
         
-        .centrepage
+    .centrepage
     {
         flex-direction: column-reverse;
+        margin: 0;
     }
     .card2:hover , .card:hover , .card3:hover
     {
-        display: none;
+        transform: inherit;
     }
-    #tendances
+    article
     {
-        width: 30rem;
-        padding: 0.5rem;
+        width: 100%;
+        height: 100%;
+        margin: 0 0 1.5rem 0;
+
     }
-    #hebergement
+    .tendances
     {
-        background: none;
+        width: 100%;
         padding: 0;
+        margin: 1rem 0;
     }
-    .photoHeber, .imgact1, .imgact2,.imgact3, .imgact4, .imgact5
+    .hebergement
     {
-        height: 10rem;
-        width: 30rem;
+        width: 100%;
+        background: inherit;
+        padding: 0;
+        margin: 1rem 0;
+    }
+    .activit
+    {
+        width: 100%;
+    }
+    .cardimage
+    {
+        width: 100%;
+    }
+    .imgact1, .imgact2, .imgact3, .imgact4, .imgact5
+    {
+        height: 16rem;
+        width: 100%;
+    }
+    .card2
+    {
+        margin: 1rem 2rem;
     }
     .card
     {
-        width: 30rem;
+        width: 100%;
+        margin: 2rem;
     }
     .card3
     {
-        margin: 0 0 2rem 2rem;
+        width: 100%;
+        margin: 2rem;
+    }
+    .cardinfo3
+    {
+        padding: 0;
+    }
+    h2
+    {
+        padding: 0 2rem;
+    }
+    h5
+    {
+        margin: 0.5rem 1.5rem;
     }
     footer
     {
         flex-direction: column;
-        margin-top: 65rem;
+        margin:  0;
+    }
+    li
+    {
+        margin: 0.5rem 0;
     }
 }
 /** Tablet **/
 @media (max-width: 768px) {
- 
+            .container
+    {
+        margin: 0;
+        max-width: inherit;
+        font-size: 1.7rem;
+
+    }
+    header
+    {
+        padding: 1rem 3rem;
+    }
+    .navlogo
+    {
+        margin-right: 25rem;
+    }
+    .logo
+    {
+        padding: 0;
+    }
+    .search
+    {
+        padding: 1rem 3rem;
+    }
+        .textsearch
+    {
+        display: none;
+    }
+    .iconsearch
+    {
+        display: flex;
+        color: white;
+        font-size: 1.7rem;
+    }
+    .filtre
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .titlefilter
+    {
+        font-size: 2.7rem;
+        width: 100%;
+        margin: 1.5rem 0;
+        padding: 0;
+    }
+    article
+    {
+        margin-top: 1rem;
+        flex-direction: row-reverse;
+    }
+    .hebergement
+    {
+        width: 100%;
+    }
+    .card
+    {
+        width: 33rem;
+        margin-bottom: 3rem;
+    }
+    .tendances
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+    .card2
+    {
+        height: 17rem;
+        margin: 2rem 0;
+    }
+    .cardimage2
+    {
+        width: 40rem;
+    }
+    .activités
+    {
+        padding: 1rem 3rem;
+    }
+    .activit
+    {
+        width: 50%;
+        margin: 1rem 0;
+    }
+    .greybrdr
+    {
+        padding: 0 15rem 0 3rem;
+    }
+    footer
+    {
+        padding: 1rem 3rem;
+        flex-wrap: wrap;
+    }
+    h3
+    {
+        margin: 1rem 0;
+    }
+    h5
+    {
+        margin-bottom: 1rem;
+    }
 }
  
