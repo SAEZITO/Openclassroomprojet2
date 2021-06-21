@@ -18,62 +18,112 @@ body
 	font-family: 'Raleway', Arial, Verdana, sans-serif;
     margin: 0px;
 }
-.container
+h1
 {
-    max-width: 1440px;
-    margin: 0 auto;
-    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 1000;
+}
+h2
+{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.1rem;
+    font-weight: 1000;
+}
+h3
+{
+    font-weight: 1000;
+    font-size: 1.9rem;
+    margin-right: 2rem;
+}
+h4
+{
+    font-weight: 1000;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+h5
+{
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin: 5rem 0 0 0;
+    font-weight: 1000;
 }
 a
 {
     color: black;
     text-decoration-line: none;
 }
+a:hover
+{
+    color: #0065FC;
+}
 b
 {
-    font-weight: 900;
+    font-weight: 1000;
 }
 p
 {
     font-size: 1.4rem;
+}
+.container
+{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+header
+{
+       margin-bottom: 3rem; 
 }
 nav
 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    margin-bottom: 2em;
 }
 
-header nav a:hover 			/*placer un liseret au survol des choix de l'en-tête*/
+header nav a:hover 			
 {
+    padding-top: 3rem;
     border-top: 2.5px solid #0065FC;
     color: #0065FC;
-}
+}                                               /*placer un liseret au survol des choix de l'en-tête*/
 nav a
 {
     font-size: 1.5rem;
-    padding: 2.5rem 2rem 4rem 2rem;
+    padding: 3rem;
+}
+nav div
+{
+    padding: 2.1rem;
 }
 .navlogo
 {
-    margin-right: 95rem;
+   display: flex;
+   flex-grow: 1; 
+   height: 5rem;                    
 }
-.logo 
+
+/*Partie destinée à la recherche*/
+.search
 {
-    padding-top: 2.1rem;
-    width: 10rem;
-    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
 }
+
 .position
 {
     display: flex;
-    flex-wrap: nowrap;
-    font-weight: bold;
-    background: none;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 .searchbar
+{
+    display: flex;
+}
+.iconposition
 {
     display: flex;
     justify-content: space-around;
@@ -81,7 +131,6 @@ nav a
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     background-color: #F2F2F2F2;
-    height: 100%;
     width: 5rem;
     font-size: 1.5rem;
 }
@@ -92,11 +141,27 @@ input::placeholder
     font-size: 1.5rem;
     opacity: 1;
 }
-button
+.greybrdr
 {
-    display: flex;
-    align-items: center;
+    border: 1px solid #F2F2F2F2;
+    padding: 0 7rem 0 1rem; 
 }
+.bgblue
+{
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 1.5rem;
+}
+.iconsearch
+{
+    display: none;
+}
+
 .filtre
 {
     display: flex;
@@ -105,6 +170,11 @@ button
     margin-top: 2rem;
     font-size: 1.9rem;
 }
+.titlefilter
+    {
+        font-size: 1.9rem;
+        margin-right: 3rem;
+    }
 .filterbut
 {
     display: flex;
@@ -154,7 +224,7 @@ button
     top: 7px; 
 }
 
-
+/* partie du milieu avec hebergements et tendances*/
 .centrepage
 {
     display: flex;
@@ -167,14 +237,10 @@ button
 {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
     padding: 1rem 3rem;
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 65%;
-    margin-bottom: 2rem;
-
 }
 article
 {
@@ -183,33 +249,41 @@ article
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
-    min-height: 50rem;
     margin-top: 2rem;
+    min-height: 51rem;
 }
 .card
 {   
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
     width: 27rem;
     padding: 0.5rem;
+    margin: 0;
     background-color: white;
     border-radius: 2rem;
     box-shadow: 3px 3px 10px #CCCCCC; 
     cursor: pointer;
-    margin-bottom: 2rem;
 }
 .cardimage
 {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: flex-start;
     width: 100%;
+    height: 14rem;
     margin: 0;
     padding: 0;
 }
+.photoHeber
+{
+   width: 100%;
+   border-top-right-radius: 2rem;
+   border-top-left-radius: 2rem;
+   object-fit: cover;
+}
+.cardfooter
+{
+    margin: 0.5rem 0;
+}
+
 .cardinfo , .cardinfo2, .cardinfo3
 {
     display: flex;
@@ -217,43 +291,25 @@ article
     justify-content: space-between;
     font-size: 1.2rem;
     width: 100%;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem;
     box-sizing: border-box;
 }
-.cardfooter
-{
-    margin: 0.1rem;
-}
-.cardinfo2 i 
-{
-    padding-top: 2rem;
-    font-size: 1.2rem;
-}
-.photoHeber
-{
-   display: block;
-   width: 100%;
-   height: 14rem;
-   border-top-right-radius: 20px;
-   border-top-left-radius: 20px;
-   object-fit: cover;
-}
-.tendances
-{
-  display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 1rem 3rem;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    width: 25%;
-    margin-bottom: 2rem;
-}
-.card2:hover , .card:hover , .card3:hover
+.card:hover , .card2:hover , .card3:hover
 {
     transform: scale(1.2);
     transition-duration: 1.5s;
 }
+
+.tendances
+{
+  display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 25%;
+}
+
 .card2
 {   
     display: flex;
@@ -261,10 +317,10 @@ article
     width: 100%;
     height: 15rem;
     text-align: left;
-    margin: 0 0 2rem 0;
     padding: 0.5rem;
+    margin: 0 0 5rem 0;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 2rem;
     box-shadow: 3px 3px 10px #CCCCCC; 
     cursor: pointer;
 }
@@ -276,7 +332,7 @@ article
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 20rem;
+    width: 25rem;
     
 }
 .imgtendance
@@ -284,10 +340,17 @@ article
     display: flex;
     height: 100%;
     width: 100%;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
     object-fit: cover;
 }
+
+.cardinfo2 i 
+{
+    padding-top: 2rem;
+}
+
+/*Partie centrale du bas:  Activités à Marseille*/
 .activités
 {
     display: flex;
@@ -295,20 +358,21 @@ article
     padding: 0;
     margin: 0;
 }
-.activit
+.activ
 {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    width: 25%;
+    width: 23%;
 }
 .card3
 {
     display: flex;
     flex-direction: column;
+    width: 100%;
     padding: 0;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 2rem;
     box-shadow: 3px 3px 10px #CCCCCC; 
     cursor: pointer;
 }
@@ -319,48 +383,41 @@ article
     padding: 0;
     width: 100%;
     flex-direction: column;
-    justify-content: center;
 }
-.imgact1
-{   
-    height: 45rem;
-    width: 33rem;
-}
+
 .imgact
 {
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
-    box-sizing: border-box;
     height: 100%;
 }
 
+.imgact1
+{   
+    height: 45rem;
+}
 .imgact2
 {
     height: 25rem;
-    width: 33rem;
 }
-
 .imgact3
 {
     height: 11rem;
-    width: 33rem;
 }
 .imgact4
 {
     height: 20rem;
-    width: 33rem;
 }
 .imgact5
 {
     height: 16rem;
-    width: 33rem;
 }
+
+
 footer
 {
     display: flex;
-    justify-content: space-between;
     background-color: #F2F2F2;
-    width: 100%;
     margin: 3rem 0 0 0;
     padding: 5rem 4rem;
     box-sizing: border-box;
@@ -369,20 +426,18 @@ footer
 li
 {
     list-style: none;
-    margin-right: 30rem;
+    margin: 1rem 0 0 0;
     padding: 0;
 }  
 ul
 {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 0rem;
-    margin-top: 1rem;
+    margin: 2rem 25rem 0 0;
 }
-.iconsearch
-{
-    display: none;
-}
+
+
 .cyan
 {
     color: #DEEBFF; 
@@ -392,58 +447,13 @@ ul
     color: #0065FC;
     font-weight: bold;
 }
-.bgblue
-{
-    background-color: #0065FC;
-    color: white;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border: none;
-    font-size: 1.4rem;
-    font-weight: 600;
-    padding: 2rem;
-}
 .grey
 {
     color: #CCCCCC;
 }
-.greybrdr
-{
-    border: 1px solid #F2F2F2F2;
-    padding: 0 7rem 0 1rem; 
-}
-h1
-{
-    margin: 0;
-}
-h2
-{
-    margin: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    font-size: 2.1rem;
-    font-weight: 1000;
-}
-h3
-{
-    font-weight: 1000;
-    font-size: 1.7rem;
-    margin-right: 2rem;
-}
-h4
-{
-    font-weight: 800;
-    font-size: 1.6rem;
-    margin: 1rem;
-    cursor: pointer;
-}
-h5
-{
-    font-size: 1.7rem;
-    cursor: pointer;
-    margin: 0;
-    font-weight: 800;
-}
+
+
+
 
 /** Mobile **/
 @media (max-width: 480px) 
@@ -454,12 +464,20 @@ h5
         max-width: inherit;
 
     }
+    header
+    {
+        margin-bottom: 1rem;
+    }
     header nav a:hover
     {
     color: #0065FC;
     border-top: 0;
     }
-
+    nav a, nav div
+    {
+        padding: 2rem;
+        margin: 0;
+    }
     nav 
      {
         flex-wrap: wrap;
@@ -470,9 +488,7 @@ h5
      nav :nth-child(3) , nav :nth-child(2)
      {
         order: 3;
-        padding: 1.8rem;
         border-bottom: 3px solid #F2F2F2; 
-        width: 40%;
     }
     
      .navheb:hover , .navact:hover
@@ -480,31 +496,25 @@ h5
     border-bottom: 3px solid #0065FC;
     color: #0065FC;
     }
-    
-     .navlogo
-     {
-        width: 40%;
-        display: flex;
-        justify-content: flex-start;
-        margin: 0;
-     }
-
-    .navheb 
-    {       }
-    .navinsc
-    {    width: 50%; 
-        display: flex;
-        justify-content: flex-end;
-        align-self: flex-end;
+    .navheb, .navact
+    {
+        width: 38%;
+    }
+    .navlogo
+    {
+        width: 20%;
+        padding: 0 0 0 2rem;
     }
     .logo
     {
         padding: 0;
         margin: 0;
     }
+
     .search
     {
         padding: 0 2rem;
+        margin: 0;
     }
     .textsearch
     {
@@ -531,6 +541,7 @@ h5
     .filtre
     {
         flex-wrap: wrap;
+        margin-top: 0;
     }
     .titlefilter
     {
@@ -550,11 +561,14 @@ h5
     {
         margin: 0;
     }
-        
+    .inforesult
+    {
+        font-size: 1.2rem;
+    } 
     .centrepage
     {
         flex-direction: column-reverse;
-        margin: 0;
+        margin: 1rem 0;
     }
     .card2:hover , .card:hover , .card3:hover
     {
@@ -562,76 +576,86 @@ h5
     }
     article
     {
-        width: 100%;
-        height: 100%;
-        margin: 0 0 1.5rem 0;
-
+        flex-direction: column;
+        margin: 0;
+    }
+    .cardfooter
+    {
+        font-size: 1.7rem;
+        margin: 0 0 0.5rem 0;
     }
     .tendances
     {
         width: 100%;
-        padding: 0;
-        margin: 1rem 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        box-sizing: border-box;
     }
     .hebergement
     {
         width: 100%;
         background: inherit;
-        padding: 0;
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+        box-sizing: border-box;
+    }
+    h5
+    {
         margin: 1rem 0;
     }
-    .activit
+    .activités
+    {
+        width: 100%;
+        padding: 0 2rem;
+        margin: 1rem 0;
+        box-sizing: border-box;
+    }
+    .activ
     {
         width: 100%;
     }
     .cardimage
     {
+        height: 12rem;
         width: 100%;
     }
     .imgact1, .imgact2, .imgact3, .imgact4, .imgact5
     {
-        height: 16rem;
+        height: 12rem;
         width: 100%;
     }
-    .card2
-    {
-        margin: 1rem 2rem;
-    }
-    .card
+    .card, .card2, .card3
     {
         width: 100%;
-        margin: 2rem;
+        margin: 2rem 0;
+        box-sizing: border-box;
     }
-    .card3
+    .cardinfo, .cardinfo2
     {
-        width: 100%;
-        margin: 2rem;
-    }
-    .cardinfo3
-    {
-        padding: 0;
-    }
-    h2
-    {
-        padding: 0 2rem;
-    }
-    h5
-    {
-        margin: 0.5rem 1.5rem;
+        padding: 0.5rem;
     }
     footer
     {
         flex-direction: column;
         margin:  0;
     }
+    ul
+    {
+        margin: 0;
+    }
     li
     {
-        margin: 0.5rem 0;
+        margin: 1rem 0;
     }
 }
 /** Tablet **/
-@media (max-width: 768px) {
-            .container
+@media (min-width: 481px) and (max-width: 768px) {
+    body
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .container
     {
         margin: 0;
         max-width: inherit;
@@ -642,13 +666,19 @@ h5
     {
         padding: 1rem 3rem;
     }
-    .navlogo
+    nav
     {
-        margin-right: 25rem;
+        margin-bottom: 1rem;
     }
-    .logo
+    nav a
     {
+        font-size: 1.9rem;
+    }
+    nav div
+    {
+        width: 20%;
         padding: 0;
+        margin: 2rem;
     }
     .search
     {
@@ -676,6 +706,10 @@ h5
         margin: 1.5rem 0;
         padding: 0;
     }
+    .inforesult
+    {
+        margin: 3rem 0 0 0;
+    }
     article
     {
         margin-top: 1rem;
@@ -684,6 +718,7 @@ h5
     .hebergement
     {
         width: 100%;
+        margin: 0;
     }
     .card
     {
@@ -693,7 +728,7 @@ h5
     .tendances
     {
         width: 100%;
-        margin: 0;
+        margin: 3rem 0;
     }
 
     .card2
@@ -708,11 +743,12 @@ h5
     .activités
     {
         padding: 1rem 3rem;
-    }
-    .activit
-    {
-        width: 50%;
         margin: 1rem 0;
+    }
+    .activ
+    {
+        width: 45%;
+        margin: 1rem;
     }
     .greybrdr
     {
@@ -725,11 +761,11 @@ h5
     }
     h3
     {
-        margin: 1rem 0;
+        margin: 3rem 0;
     }
     h5
     {
-        margin-bottom: 1rem;
+        margin: 0 0 2rem 0;
     }
 }
  
