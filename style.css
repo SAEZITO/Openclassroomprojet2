@@ -1,0 +1,822 @@
+
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+	font-family: 'Raleway', Arial, Verdana, sans-serif;
+    margin: 0px;
+}
+h1
+{
+    margin: 0;
+    font-weight: bold;
+}
+h2
+{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+h3
+{
+    font-weight: bold;
+    font-size: 1.9rem;
+    margin-right: 2rem;
+}
+h4
+{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+h5
+{
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin: 1rem 0 0 0;
+    font-weight: bold;
+}
+a
+{
+    color: black;
+    text-decoration-line: none;
+}
+a:hover
+{
+    color: #0065FC;
+}
+b
+{
+    font-weight: 800;
+}
+p
+{
+    font-size: 1.4rem;
+}
+.container
+{   
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+header
+{
+       margin-bottom: 3rem; 
+}
+nav
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav a:hover 			
+{
+    padding-top: 3rem;
+    border-top: 2.5px solid #0065FC;
+    color: #0065FC;
+}  
+.boldblue:hover
+    {
+        border-top: none;
+    }                                             /*placer un liseret au survol des choix de l'en-tête*/
+nav a
+{
+    font-size: 1.5rem;
+    padding: 3rem;
+}
+nav div
+{
+    padding: 2rem;
+}
+.navlogo
+{
+   display: flex;
+   flex-grow: 1; 
+   height: 5rem;                    
+}
+
+/*Partie destinée à la recherche*/
+.search
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.position
+{
+    display: flex;
+    margin: 1rem 0;
+}
+.searchbar
+{
+    display: flex;
+}
+.iconposition
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #F2F2F2F2;
+    width: 11rem;
+    font-size: 1.7rem;
+}
+input::placeholder
+{
+    color: black;
+    font-weight: 900;
+    font-size: 1.7rem;
+    opacity: 1;
+    width: 100%;
+    font-family: 'Raleway';
+}
+.greybrdr
+{
+    border: 1px solid #F2F2F2F2;
+    padding: 0 7rem 0 2rem; 
+    width: 100%;    
+}
+.bgblue
+{
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 1.5rem;
+}
+.iconsearch
+{
+    display: none;
+}
+
+.filtre
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 1.9rem;
+}
+.titlefilter
+    {
+        font-size: 1.9rem;
+        margin-right: 3rem;
+    }
+.filterbut
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #CCCCCC;
+    border-radius: 30px;
+    font-weight: 900;
+    margin: 1rem;
+    padding: 2rem 3rem 2rem 0;
+    background: none;
+    height: 50px;
+    font-size: 1.9rem;
+    font-family: 'Raleway';
+}
+.filterbut:hover
+{
+    background-color: #CCCCCC;
+    transform: scale(1.05);
+    transition-duration: 0.5s; 
+    cursor: pointer;
+}
+.fa-stack                                   /* ajustement des icones pour les filtres */
+{
+    font-size: 2.5rem;
+    right: 1rem;
+}
+.inforesult
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+.circle
+{
+    height: 2rem;
+    width: 2rem;
+    border: solid 1px #CCCCCC;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    position: relative;
+    top: 7px; 
+}
+
+/* partie du milieu avec hebergements et tendances*/
+.centrepage
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2rem 0rem;
+}
+.hebergement
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 65%;
+    margin-right: 2rem;
+}
+article
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-top: 2rem;
+    min-height: 50rem;
+}
+.card
+{   
+    display: flex;
+    flex-direction: column;
+    width: 27rem;
+    padding: 0.5rem;
+    margin: 0 0 3rem 0;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 10px #CCCCCC; 
+    cursor: pointer;
+}
+.cardimage
+{
+    display: flex;
+    width: 100%;
+    height: 14rem;
+    margin: 0;
+    padding: 0;
+}
+.photoHeber                         /* ajustement des photos pour les hébergements */
+{
+   display: flex;
+   width: 100%;
+   border-top-right-radius: 2rem;
+   border-top-left-radius: 2rem;
+   object-fit: cover;
+}
+.cardfooter
+{
+    margin: 0.5rem 0;
+}
+.cardinfo , .cardinfo2, .cardinfo3
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.card:hover , .card2:hover , .card3:hover           /* mise en place d'un zoom au survol */
+{
+    transform: scale(1.2);
+    transition-duration: 1.5s;
+}
+
+.tendances
+{
+  display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 25%;
+}
+
+.card2
+{   
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15rem;
+    text-align: left;
+    padding: 0.5rem;
+    margin: 0 0 4rem 0;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 10px #CCCCCC; 
+    cursor: pointer;
+}
+.cardimage2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 25rem;
+    
+}
+.imgtendance                                     /* ajustement des photos pour la partie tendances */
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    object-fit: cover;
+}
+
+.cardinfo2 i                                       /* marge pour les étoiles de la patie tendance */
+{
+    padding-top: 2rem;
+}
+
+/*Partie centrale du bas:  Activités à Marseille*/
+.activités
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.activ
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 23%;
+}
+.card3
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 10px #CCCCCC; 
+    cursor: pointer;
+}
+.cardimage3
+{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+.imgact
+{
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+    height: 100%;
+}
+
+.imgact1
+{   
+    height: 45rem;
+}
+.imgact2
+{
+    height: 25rem;
+}
+.imgact3
+{
+    height: 11rem;
+}
+.imgact4
+{
+    height: 20rem;
+}
+.imgact5
+{
+    height: 16rem;
+}
+
+
+/* Pied de page */    
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    margin: 3rem 0 0 0;
+    padding: 5rem 4rem;
+    box-sizing: border-box;
+}
+
+li
+{
+    list-style: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+}  
+ul
+{
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 0rem;
+    margin: 2rem 25rem 0 0;
+}
+
+/* classes des couleurs de la maquette */
+.cyan
+{
+    color: #DEEBFF; 
+}
+.boldblue 
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+.grey
+{
+    color: #CCCCCC;
+}
+
+
+/** Responsive Mobile **/
+@media (max-width: 480px) {
+    .container
+    {
+        margin: 0;
+        padding: 0;
+        max-width: inherit;
+        width: 100%;
+
+    }
+    header
+    {
+        margin-bottom: 1rem;
+    }
+    header nav a:hover
+    {
+    color: #0065FC;
+    border-top: 0;
+    }
+    nav 
+     {
+        flex-wrap: wrap;
+        min-height: 15rem;
+        justify-content: center;
+        align-content: center;
+     }   
+     nav :nth-child(3) , nav :nth-child(2)                  /* creation d'un bord gris pour le responsive mobile */
+     {
+        order: 3;
+        border-bottom: 3px solid #F2F2F2; 
+    }
+    
+     .navheb:hover , .navact:hover                          /* changement de couleur du bord au survol */
+    {
+    border-bottom: 3px solid #0065FC;
+    color: #0065FC;
+    }
+    .navheb, .navact
+    {
+        width: calc(50% - 4rem); 
+    }
+    .navlogo
+    {
+        width: 20%;
+        padding: 0 0 0 2rem;
+    }
+    .logo
+    {
+        padding: 0;
+        margin: 0;
+    }
+    .position
+    {
+        width: 100%;
+    }
+    .search
+    {
+        padding: 0 2rem;
+        margin: 0;
+    }
+    .searchbar
+    {
+        width: 100%;
+    }
+    .textsearch
+    {
+        display: none;
+    }
+    .iconsearch
+    {
+        display: flex;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .bgblue
+    {
+        padding: 1.5rem;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        position: relative;
+        right: 10px;
+    }
+    .searchbar
+    {
+        font-size: 2.1rem;
+    }
+    .filtre
+    {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .titlefilter
+    {
+        width: 100%;
+    }
+    .filterbut
+    {
+        padding: 0 2rem 0 0;
+        height: 4rem;
+        font-size: 1.6rem;
+        margin: 1rem 0.5rem;
+    }
+    .eco
+    {
+        width: calc(50% - 1rem);
+    }
+    .roman
+    {
+        margin-right: 15rem;
+    }
+    .fa-stack
+    {
+        margin: 0;
+        font-size: 2.1rem;
+    }
+
+    .inforesult
+    {
+        font-size: 1.2rem;
+    } 
+    .centrepage
+    {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin: 1rem 0;
+    }
+    .card2:hover , .card:hover , .card3:hover
+    {
+        transform: inherit;
+        background-color: #DEEBFF;
+    }
+    article
+    {
+        flex-direction: column;
+        margin: 0;
+    }
+    .cardfooter
+    {
+        font-size: 1.7rem;
+        margin: 0 0 0.5rem 0;
+    }
+    .tendances
+    {
+        width: 100%;
+        padding: 1rem 2rem;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .hebergement
+    {
+        width: 100%;
+        background: inherit;
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+        box-sizing: border-box;
+    }
+    h5
+    {
+        margin: 1rem 0;
+    }
+    .activités
+    {
+        width: 100%;
+        padding: 0 2rem;
+        margin: 1rem 0;
+        box-sizing: border-box;
+    }
+    .activ
+    {
+        width: 100%;
+    }
+    .cardimage
+    {
+        height: 12rem;
+        width: 100%;
+    }
+    .imgact1, .imgact2, .imgact3, .imgact4, .imgact5
+    {
+        height: 12rem;
+        width: 100%;
+    }
+    .card, .card2, .card3
+    {
+        width: 100%;
+        margin: 2rem 0;
+        box-sizing: border-box;
+    }
+    .cardinfo, .cardinfo2
+    {
+        padding: 0.5rem 1rem;
+    }
+    .cardinfo2 i
+    {
+     padding: 0.5rem 0;   
+    }
+    footer
+    {
+        flex-direction: column;
+        margin:  0;
+    }
+    ul
+    {
+        margin: 0;
+    }
+    li
+    {
+        margin: 1rem 0;
+    }
+}
+/** Responsive Tablet **/
+@media (min-width: 481px) and (max-width: 768px) {
+    body
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .container
+    {
+        margin: 0;
+        padding: 0;
+        max-width: inherit;
+        font-size: 1.7rem;
+    }
+    header
+    {
+        padding: 1rem 3rem;
+        background-color: #f2f2f2;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        width: calc(100% - 6rem);
+    }
+    nav
+    {
+        margin-bottom: 1rem;
+    }
+    nav a
+    {
+        font-size: 1.7rem;
+    }
+    nav div
+    {
+        width: 20%;
+        padding: 0;
+        margin: 2rem;
+    }
+    .search
+    {
+        padding: 1rem 3rem;
+    }
+
+        .textsearch
+    {
+        display: none;
+    }
+    .iconsearch
+    {
+        display: flex;
+        color: white;
+        font-size: 1.9rem;
+        width: 3rem;
+        justify-content: center;
+    }
+    .iconposition
+    {
+        width: 13rem;
+        font-size: 1.9rem;
+    }
+    .filtre
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .titlefilter
+    {
+        font-size: 2.7rem;
+        width: 100%;
+        margin: 1.5rem 0;
+        padding: 0;
+    }
+    .inforesult
+    {
+        margin: 3rem 0 0 0;
+    }
+    .centrepage
+    {
+        flex-wrap: wrap;
+    }
+    article
+    {
+        margin-top: 1rem;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .hebergement
+    {
+        width: 100%;
+        margin: 0;
+    }
+    .card
+    {
+        width: 33rem;
+        margin: 0 1rem 3rem 0;
+    }
+    .card:hover, .card2:hover, .card3:hover
+    {
+        transform: scale(1.1);
+        transition-duration: 1.5s;
+    }
+
+    .tendances
+    {
+        width: 100%;
+        margin: 3rem 0;
+    }
+
+    .card2
+    {
+        height: 17rem;
+        margin: 2rem 0;
+    }
+    .cardimage2
+    {
+        width: 40rem;
+    }
+    .activités
+    {
+        padding: 1rem 3rem;
+        margin: 1rem 0;
+        background-color: #F2F2F2;
+        border-radius: 2rem;
+    }
+    .activ
+    {
+        width: 45%;
+        margin: 1rem;
+    }
+    .greybrdr
+    {
+        padding: 0 15rem 0 3rem;
+    }
+    footer
+    {
+        padding: 1rem 3rem;
+        flex-wrap: wrap;
+    }
+    ul
+    {
+        margin: 2rem 7rem 0 0;
+    }
+    h3
+    {
+        margin: 3rem 0;
+    }
+    h5
+    {
+        margin: 0 0 2rem 0;
+    }
+}
+ @media (max-width: 350px){
+
+    .greybrdr
+    {
+        padding: 0 3rem 0 1rem;
+    }
+}
