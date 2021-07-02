@@ -664,7 +664,7 @@ ul
     }
 }
 /** Responsive Tablet **/
-@media (min-width: 480.5px) and (max-width: 1023px) {
+@media (min-width: 480.5px) and (max-width: 970px) {
     body
     {
         margin: 0;
